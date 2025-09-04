@@ -7,10 +7,7 @@ public class JsonGenerateExample {
 
     public static void main(String[] args) {
         // Create a new Record object
-        Record record = new Record();
-        record.setName("Test Name");
-        record.setValue("Test Value");
-        record.setEnabled(true);
+        Record record = new Record("Test Name", "Test Value", true);
 
         // Use Jackson to generate JSON
         ObjectMapper mapper = new ObjectMapper();

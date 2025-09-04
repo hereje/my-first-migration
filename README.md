@@ -10,13 +10,13 @@ The purpose of this project is to demonstrate how a simple COBOL program can be 
 
 The project consists of two main Java classes:
 
-*   `Record.java`: This class is a simple POJO (Plain Old Java Object) that defines the data structure for the JSON output. It contains three fields: `name` (String), `value` (String), and `enabled` (boolean). The `@JsonProperty` annotations are used by the Jackson library to map the Java fields to the JSON keys.
+*   `Record.java`: This class is a record that defines the data structure for the JSON output. It contains three fields: `name` (String), `value` (String), and `enabled` (boolean).
 
 *   `JsonGenerateExample.java`: This is the main class of the application. It creates an instance of the `Record` class, populates it with sample data, and then uses the Jackson `ObjectMapper` to serialize the `Record` object into a pretty-printed JSON string. The resulting JSON is then printed to the console.
 
 ## Requirements
 
-*   Java 11 or higher
+*   Java 17 or higher
 *   Apache Maven 3.6.3 or higher
 
 ## How to Build and Run

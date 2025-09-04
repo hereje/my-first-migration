@@ -7,13 +7,10 @@ class RecordTest {
 
     @Test
     void testRecordGettersAndSetters() {
-        Record record = new Record();
-        record.setName("Test Name");
-        record.setValue("Test Value");
-        record.setEnabled(true);
+        Record record = new Record("Test Name", "Test Value", true);
 
-        assertEquals("Test Name", record.getName());
-        assertEquals("Test Value", record.getValue());
-        assertTrue(record.isEnabled());
+        assertEquals("Test Name", record.name());
+        assertEquals("Test Value", record.value());
+        assertTrue(record.enabled());
     }
 }
